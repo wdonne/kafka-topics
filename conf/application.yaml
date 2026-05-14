@@ -1,0 +1,4 @@
+default-partitions: 1
+default-replication-factor: 1
+kafka:
+  bootstrap.servers: localhost:9092
