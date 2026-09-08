@@ -41,6 +41,7 @@ const KAFKA: &str = "kafka";
 const MAX_MESSAGE_BYTES: &str = "max.message.bytes";
 const RETENTION_BYTES: &str = "retention.bytes";
 const RETENTION_MS: &str = "retention.ms";
+const VERSION: &str = "1.0.1";
 
 struct Data {
     api: Api<KafkaTopic>,
@@ -196,8 +197,6 @@ fn kafka_config(config: &Config) -> Result<ClientConfig, OperatorError> {
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    const VERSION: &str = "1.0.0";
-
     env_logger::init();
     default_provider()
         .install_default()
