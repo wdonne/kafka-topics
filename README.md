@@ -46,3 +46,5 @@ data:
 ```
 
 The format of the configuration file can be anything described in [Rust Config](https://docs.rs/config/latest/config/). If your configuration has partly secret information and partly non-secret information, then you can load both a secret and a config map. Then you can include one in the other. The default command in the container image expects to find the configuration as `/conf/application`, but you can change this in the values file.
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/wdonne/kafka-topics)
